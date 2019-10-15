@@ -9,7 +9,7 @@ def map (array)
   return new_array
 end
 
-def reduce (array,start)
+def reduce (array,start=0)
   i=0;
   while i<array.length do
     start = yield(start,array[i])
