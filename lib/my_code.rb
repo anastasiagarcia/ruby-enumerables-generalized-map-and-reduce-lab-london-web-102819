@@ -11,7 +11,7 @@ end
 
 def reduce (array,*start)
   if(start.size == 1)
-    start = yield(start, array[0])
+    start = yield(start[0], array[0])
   else
     start = yield(array[0], array[1])
   end
