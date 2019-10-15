@@ -10,7 +10,6 @@ def map (array)
 end
 
 def reduce (array,*start)
-  i=0;
   if(start.size == 1)
     start = yield(start, array[0])
   else
