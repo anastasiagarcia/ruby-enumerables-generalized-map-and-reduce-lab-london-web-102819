@@ -11,6 +11,7 @@ end
 
 def reduce (array,*start)
   i=0;
+  if start.length == 1
   while i<array.length do
     start = yield(start,array[i])
     i+=1
