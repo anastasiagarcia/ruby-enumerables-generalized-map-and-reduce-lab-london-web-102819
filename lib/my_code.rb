@@ -15,7 +15,9 @@ def reduce (array,start=0)
   while i<array.length do
     start +=yield(array[i]);
     i+=1;
+  end
     return number
+  end
     
   
   #element=array[i]
