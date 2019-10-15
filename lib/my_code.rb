@@ -13,7 +13,7 @@ def reduce (array,start=0)
   number=start;
   i=0;
   while i<array.length do
-    start +=yield(array[i]);
+    number +=yield(array[i]);
     i+=1;
   end
     return number
