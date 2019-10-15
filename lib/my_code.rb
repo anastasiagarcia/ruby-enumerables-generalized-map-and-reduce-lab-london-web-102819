@@ -11,12 +11,11 @@ end
 
 def reduce (array,start=0)
   i=0;
-  n += start
   while i<array.length do
-    n = yield(start,array[i])
+    start = yield(start,array[i])
     i+=1
   end
-    return n
+    return start
   end
     
   
