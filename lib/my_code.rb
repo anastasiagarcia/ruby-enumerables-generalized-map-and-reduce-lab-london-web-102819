@@ -10,13 +10,14 @@ def map (array)
 end
 
 def reduce (array,start=0)
-  number=start;
   i=0;
+  t = yield(array[0])
+  i = 1
   while i<array.length do
-    number +=yield(array[i]);
+    t +=yield(array[i]);
     i+=1;
   end
-    return number
+    return t
   end
     
   
