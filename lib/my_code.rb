@@ -10,13 +10,13 @@ def map (array)
 end
 
 def reduce (array,*start)
+  i=1
   if(start.size == 1)
     start = yield(start[0], array[0])
+    i+=1
   else
     start = yield(array[0], array[1])
   end
-  
-  i = 1
   while i<array.length do
     start = yield(start,array[i])
     i+=1
