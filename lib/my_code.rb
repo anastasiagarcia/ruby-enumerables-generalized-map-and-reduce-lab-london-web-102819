@@ -11,13 +11,11 @@ end
 
 def reduce (array,start=0)
   i=0;
-  t = yield(array[0])
-  i = 1
   while i<array.length do
-    t +=yield(array[i]);
+    number +=yield(array[i]);
     i+=1;
   end
-    return t
+    return number
   end
     
   
